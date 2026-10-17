@@ -1,0 +1,38 @@
+:root{--navy:#1F2A44;--gold:#C8963E;--gold-dark:#7A5A1E;--ivory:#FAF6EC;--card:#fff;--line:#E7DFCB}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--ivory);color:var(--navy);line-height:1.65}
+h1,h2,h3,.brand{font-family:Georgia,'Times New Roman',serif;line-height:1.2}
+a{color:var(--gold-dark)}
+header{background:var(--navy);padding:14px 20px;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px}
+.brand{color:var(--ivory);font-size:1.3rem;text-decoration:none;font-weight:700}
+.brand span{color:var(--gold);font-style:italic;font-weight:400}
+nav a{color:var(--ivory);text-decoration:none;margin-left:18px}
+nav a:hover,nav a[aria-current]{color:var(--gold)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 20px}
+.hero{text-align:center;padding:48px 0 32px}
+.hero img{width:min(300px,70%);height:auto}
+.hero h1{font-size:clamp(2rem,6vw,3.2rem);margin:10px 0}
+.hero p{max-width:620px;margin:0 auto 24px;font-size:1.1rem}
+.btn{display:inline-block;background:var(--gold);color:var(--navy);padding:12px 26px;border-radius:999px;font-weight:700;text-decoration:none}
+.btn:hover{background:var(--navy);color:var(--ivory)}
+section{padding:36px 0}
+h2{font-size:1.9rem;margin:0 0 8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px;margin-top:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.card .icon{font-size:2rem}
+.card h3{margin:6px 0}
+.price{font-weight:700;font-size:1.2rem;color:var(--gold-dark)}
+.tag{font-size:.85rem;color:var(--gold-dark)}
+.band{background:var(--navy);color:var(--ivory);text-align:center;padding:44px 20px}
+.band h2{color:var(--gold)}
+footer{text-align:center;padding:28px 20px;font-size:.9rem;border-top:1px solid var(--line)}
+@media (prefers-reduced-motion:no-preference){.btn{transition:background .2s}}
+
+.brand{display:flex;align-items:center;gap:10px}
+.brand img{width:44px;height:44px;border-radius:50%}
+.banner{width:100%;height:auto;display:block}
+.hero{padding-top:28px}
+.verse{border-left:4px solid var(--gold);padding:4px 0 4px 18px;margin:22px 0;font-family:Georgia,serif;font-size:1.15rem}
+.verse small{display:block;color:var(--gold-dark);font-family:system-ui,sans-serif;font-size:.85rem}
+.pillar{display:grid;gap:14px;margin-top:18px}
