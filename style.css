@@ -36,3 +36,29 @@ footer{text-align:center;padding:28px 20px;font-size:.9rem;border-top:1px solid 
 .verse{border-left:4px solid var(--gold);padding:4px 0 4px 18px;margin:22px 0;font-family:Georgia,serif;font-size:1.15rem}
 .verse small{display:block;color:var(--gold-dark);font-family:system-ui,sans-serif;font-size:.85rem}
 .pillar{display:grid;gap:14px;margin-top:18px}
+
+img{max-width:100%;height:auto}
+.btn,button{min-height:44px}
+nav a{display:inline-block;padding:10px 4px}
+.legal{max-width:760px;padding-bottom:40px}.legal h1{margin-top:30px}.legal h2{font-size:1.4rem;margin-top:28px}
+.legal table{border-collapse:collapse;width:100%;font-size:.95rem}.legal td,.legal th{border:1px solid var(--line);padding:8px;text-align:left;vertical-align:top}
+form{display:grid;gap:14px;max-width:600px}
+label{font-weight:600;display:grid;gap:6px}
+input,textarea,select{font:inherit;font-size:16px;padding:12px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--navy);width:100%}
+textarea{min-height:140px}
+.check{display:flex;gap:10px;font-weight:400;align-items:flex-start}.check input{width:auto;margin-top:6px}
+button.btn{border:0;cursor:pointer;font:inherit;font-weight:700}
+.hp{position:absolute;left:-9999px}
+.msg{padding:12px;border-radius:8px;background:#E8F3E8;color:#1E4620}.msg.err{background:#FBE9E7;color:#7A1F13}
+#cookie-banner{position:fixed;left:12px;right:12px;bottom:12px;z-index:50;background:var(--navy);color:var(--ivory);padding:16px;border-radius:12px;display:flex;flex-wrap:wrap;gap:12px;align-items:center;box-shadow:0 6px 24px rgba(0,0,0,.3);max-width:720px;margin:auto}
+#cookie-banner[hidden]{display:none}
+#cookie-banner p{margin:0;flex:1 1 260px;font-size:.95rem}
+#cookie-banner a{color:var(--gold)}
+#cookie-banner button{padding:10px 20px;border-radius:999px;border:2px solid var(--gold);font:inherit;font-weight:700;cursor:pointer;background:transparent;color:var(--ivory)}
+#cookie-banner #cc-accept{background:var(--gold);color:var(--navy)}
+.wa{position:fixed;right:16px;bottom:16px;width:58px;height:58px;border-radius:50%;background:#25D366;display:grid;place-items:center;z-index:40;box-shadow:0 4px 14px rgba(0,0,0,.3)}
+.wa svg{width:32px;height:32px}
+body.has-banner .wa{bottom:140px}
+.foot-links a{margin:0 8px;display:inline-block;padding:6px 0}
+.linkbtn{background:none;border:0;color:var(--gold-dark);text-decoration:underline;cursor:pointer;font:inherit;min-height:0;padding:6px 8px}
+@media (max-width:480px){.hero .btn{display:block;margin:10px auto;max-width:280px}}
