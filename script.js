@@ -16,3 +16,6 @@ fetch(f.action,{method:'POST',body:new FormData(f),headers:{Accept:'application/
 if(r.ok){f.reset();m.textContent='Thank you! Your message has been sent. We will reply soon.'}
 else{throw 0}}).catch(function(){m.className='msg err';m.textContent='Sorry, something went wrong. Please email us or use WhatsApp.'})});
 })();
+(function(){document.querySelectorAll('[data-copy]').forEach(function(b){b.onclick=function(){var v=b.getAttribute('data-copy'),o=b.textContent;
+function done(){b.textContent='Copied!';setTimeout(function(){b.textContent=o},2000)}
+if(navigator.clipboard)navigator.clipboard.writeText(v).then(done,function(){});else done()}})})();
